@@ -1,16 +1,33 @@
 # web_prodution_page
 
-A new Flutter project.
+A web Flutter project for Production Page.
 
-## Getting Started
+## build
 
-This project is a starting point for a Flutter application.
+```bash
+flutter create .
+flutter pub get
+flutter build web
+```
 
-A few resources to get you started if this is your first Flutter project:
+## result
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![result](image/result.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## deploy
+
+[page](https://twchong831.github.io/web/)
+
+### method
+
+- make github repository
+  - name.github.io
+- copy flutter build web result
+  - build/web
+  - assets to build/web/assets
+- rewrite index/html
+
+```html
+<!-- <base href="/"> -->
+<base href="/web/">
+```
